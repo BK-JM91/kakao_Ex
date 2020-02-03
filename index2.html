@@ -2,10 +2,25 @@
 <!--self-contained tag-->
 <html>
   <head>
+    <meta charset="utf-8" <meta name="description" content="welcome" />
+    <!--meta데이터는 제목 밑에 설명글-->
+    <!--브라우저를 위한 정보는 head에 넣고, 유저를 위한 정보는 body에 넣는다.-->
     <title>This is title</title>
   </head>
+
   <body>
     <h1>This is big text</h1>
+    <section>섹션 태그입니다요~</section>
+    <!--id는 고유번호지만 class는 이름처럼 여러번 명명 가능함. 그러므로 반복되는 채팅 같은건 class 네비게이션 바 같은 하나인건 id-->
+    <header id="headerHeader" class="classHeader">
+      <h1>여기 헤더는 섹션태그 안에 있지요</h1>
+    </header>
+    <!--div 태그는 의미없는 non-semantic tag-->
+    <div>
+      <header id="twoheader" class="classHeader">
+        <h1>나는 div안에 있지요</h1>
+      </header>
+    </div>
     <h6>This is small text</h6>
   </body>
 </html>
