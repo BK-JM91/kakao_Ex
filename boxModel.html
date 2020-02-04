@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BOX MODEL</title>
+    <style>
+      body,
+      html {
+        padding: 0;
+        margin: 0;
+        background-color: green;
+        height: 100%;
+      }
+      .box {
+        background-color: yellow;
+        width: 50%;
+        height: 50%;
+        padding-top: 50px;
+        padding-left: 100px;
+        margin-top: 200px;
+        margin-left: 200px;
+      }
+      .inside-box {
+        background-color: blue;
+        width: 50%;
+        padding: 200px 100px;
+        border: 5px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="inside-box"></div>
+    </div>
+  </body>
+</html>
+<!--border는 점선-->
+<!--margin은 겉 빈공간-->
+<!--body안에 .box>.inside-box라고 쓰면 div로 자동생성가능-->
