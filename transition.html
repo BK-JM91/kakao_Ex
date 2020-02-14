@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>transition</title>
+    <style>
+      .box {
+        background-color: green;
+        font-size: 80px;
+        color: white;
+        transition: all 0.5s ease-in-out;
+      }
+      .box:active {
+        background-color: hotpink;
+        color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="box">Text</span>
+  </body>
+</html>
+<!--trasition은 작성한 시간동안 변화하는 조건변화식-->
