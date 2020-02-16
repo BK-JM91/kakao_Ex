@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>animation</title>
+    <style>
+      body {
+        background-color: blue;
+      }
+      .box {
+        width: 500px;
+        height: 500px;
+        background-color: red;
+        font-size: 50px;
+        animation: 3s infinite Rrotate ease-in-out;
+      }
+      @keyframes Rrotate {
+        0% {
+          transition: none;
+        }
+        50% {
+          transform: rotate(1turn) scale(0.5, 0.5);
+          color: blue;
+        }
+        100% {
+          transform: none;
+          color: cornflowerblue;
+        }
+      }
+      @media screen and (min-width: 320px) and (max-width: 640) {
+        body {
+          background-color: crimson;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">50</div>
+  </body>
+</html>
+<!--애니메이션은 키프레임과 프럼, 투가 필요해-->
