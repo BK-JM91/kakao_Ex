@@ -4,7 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge; chrome=1" />
+    <script
+      src="https://kit.fontawesome.com/b7a794d0bc.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Friends</title>
   </head>
-  <body></body>
+  <body>
+    <!--body안에 있는 맨 위 시계 등등의 상태창 구현-->
+    <div class="status-bar">
+      <div class="status-bar_column">
+        <span class="status-bar_clock">13:54</span>
+      </div>
+      <div class="status-bar_column">
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-up"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar_battery-level">50%</span>
+        <i class="fas fa-battery-half"></i>
+      </div>
+    </div>
+    <!--header는 애플리케이션 맨 위 머리에 있는 머리 -->
+    <header class="header">
+      <div class="header_column">
+        <h1 class="header_title">Friends</h1>
+      </div>
+      <div class="header_column">
+        <span class="header_icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header_icon"></span>
+        <i class="far fa-comments"></i>
+        <span class="header_icon">
+          <i class="fas fa-cog"></i>
+        </span>
+      </div>
+    </header>
+    <!--nav는 네비게이션 역할, Ul은 리스트 역할-->
+    <nav class="nav">
+      <ul class="nav_list">
+        <li class="nav_list_item">
+          <a href="friends.html" class="nav_list-link">
+            <i class="fas fa-user"></i>
+          </a>
+        </li>
+        <li class="nav_list_item">
+          <a href="index.html" class="nav_list-link">
+            <i class="far fa-comments"></i>
+          </a>
+        </li>
+        <li class="nav_list_item">
+          <a href="find.html" class="nav_list-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav_list_item">
+          <a href="more.html" class="nav_list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+        <!-- li.nav_list_item*4>a.nav 로 작성 중 a는 링크 태그-->
+      </ul>
+    </nav>
+  </body>
 </html>
