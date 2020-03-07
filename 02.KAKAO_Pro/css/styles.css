@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
+@import "reset.css";
+@import "status-bar.css";
+@import "header.css";
+
+body {
+  background-color: white;
+  padding: 10px 20px;
+  color: #020202;
+  font-family: "Open sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* 1번 오픈산스 없으면 그다음 없으면 그다음 */
+/* 원하는 폰트는 google font 검색해서 import 들어간 다음 복사 붙여넣기 */

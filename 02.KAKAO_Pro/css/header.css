@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  /* flex는 정렬*/
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.header .header_title {
+  font-size: 24px;
+  font-weight: 600;
+  /* weight가 굵기조절 */
+}
