@@ -1,0 +1,36 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  /* postion 다음에는 반드시 width 를 사용해야함 다른 element에서 떼어내야하므로 */
+  background-color: #fcfcfc;
+  padding: 20px 50px;
+  left: 0px;
+  bottom: 0px;
+  border-top: 1px solid #f7f7f7;
+}
+
+.nav .nav_list {
+  display: flex;
+  /* 아이콘을 가로로 정렬 */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .nav_list-link {
+  position: relative;
+}
+
+.nav .nav_badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: white;
+  background-color: #dc5d46;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}

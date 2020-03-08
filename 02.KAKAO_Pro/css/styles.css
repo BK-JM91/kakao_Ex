@@ -2,6 +2,12 @@
 @import "reset.css";
 @import "status-bar.css";
 @import "header.css";
+@import "nav-bar.css";
+
+* {
+  box-sizing: border-box;
+  /* 전체 화면을 다른UI가 벗어나지 않도록 크기를 조절해줘 */
+}
 
 body {
   background-color: white;
@@ -12,3 +18,8 @@ body {
 }
 /* 1번 오픈산스 없으면 그다음 없으면 그다음 */
 /* 원하는 폰트는 google font 검색해서 import 들어간 다음 복사 붙여넣기 */
+
+a {
+  color: inherit;
+  /* 부모 색을 받아온다는 뜻으로 링크는 보라색으로 표기되지만 기본 색인 검은색으로 통일됨 */
+}
