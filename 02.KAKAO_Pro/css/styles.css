@@ -3,6 +3,7 @@
 @import "status-bar.css";
 @import "header.css";
 @import "nav-bar.css";
+@import "friend.css";
 
 * {
   box-sizing: border-box;
@@ -22,4 +23,6 @@ body {
 a {
   color: inherit;
   /* 부모 색을 받아온다는 뜻으로 링크는 보라색으로 표기되지만 기본 색인 검은색으로 통일됨 */
+  text-decoration: none;
+  /* 텍스트에 밑줄 없애기 */
 }
