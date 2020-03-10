@@ -1,0 +1,28 @@
+.settings .settings_section {
+  border-top: 1px solid #f7f7f7;
+}
+
+.settings .settings_icon {
+  font-size: 20px;
+  margin-right: 9px;
+}
+
+.settings .settings_title {
+  font-size: 20px;
+  font-weight: 300;
+}
+.settings .settings_setting {
+  padding: 20px 0px;
+}
+
+.settings_setting span {
+  cursor: pointer;
+}
+
+.settings .settings_setting:last-child {
+  margin-bottom: 13px;
+}
+
+.settings .settings_list {
+  margin-top: 13px;
+}
