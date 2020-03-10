@@ -1,0 +1,86 @@
+.more .more_btn-list {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 15px;
+  display: flex;
+}
+.more .more_btn-icon {
+  /* 색상처리 */
+  background-color: #fce006;
+  padding: 10px 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more_btn-list .more_btn {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  /* display: block 효과를 내는것과 동일함 column이; */
+  align-items: center;
+  /* 아래 텍스트와 아이콘을 맞춰서 중앙 정렬 */
+  cursor: pointer;
+}
+
+.more_btn-list .more_btn-title {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.more .more_title {
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.more .more_suggestions {
+  border-top: 1px solid #f7f7f7;
+  padding-top: 15px;
+}
+
+.more .more_btn-high {
+  border-top: 1px solid #f7f7f7;
+}
+
+.more_suggestions .more_suggestion-list {
+  margin-left: 10px;
+  display: flex;
+}
+
+.more_suggestion-list .suggestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 25px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.more_suggestions .suggestion_title {
+  font-size: 14px;
+  margin-top: 15px;
+  opacity: 0.9;
+}
+
+.suggestion .suggection_icon {
+  background-color: #fce006;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suggection_icon i,
+.more_btn-icon i {
+  font-size: 25px;
+  color: white;
+}
+
+.more .friend {
+  margin-bottom: 20px;
+}
