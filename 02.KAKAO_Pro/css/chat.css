@@ -79,17 +79,19 @@
 }
 
 .message img {
-  width: 70px;
+  width: 50px;
   border-radius: 15px;
   margin-right: 20px;
 }
 
 .message {
   align-self: flex-start;
+  margin-bottom: 50px;
 }
 
 .sent-message {
   align-self: flex-end;
+  margin-bottom: 60px;
 }
 
 .chat .message_bubbles {
@@ -98,4 +100,29 @@
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
   padding: 10px 20px;
   border-radius: 20px;
+}
+
+.chat .message_author {
+  margin-bottom: 3px;
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.message .message_bubbles {
+  border-bottom-left-radius: 0px;
+  background-image: repeating-linear-gradient(to right, #6afaff, #fbd786, pink);
+  font-weight: 500;
+  color: white;
+  text-shadow: 0.5px 0.5px gray, -0.5px -0.5px gray, -0.5px 0.5px gray,
+    0.5px -0.5px gray;
+}
+
+.sent-message .message_bubbles {
+  border-bottom-right-radius: 0px;
+  background-image: repeating-linear-gradient(to left, #6afaff, #fbd786, pink);
+  font-weight: 500;
+  color: white;
+  text-shadow: 0.5px 0.5px gray, -0.5px -0.5px gray, -0.5px 0.5px gray,
+    0.5px -0.5px gray;
 }
