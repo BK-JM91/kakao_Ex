@@ -1,6 +1,18 @@
-.chat_messages {
+.header-wrapper {
+  margin-left: -19px;
+  background-color: white;
+  padding: 10px 15px 0px 15px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+}
+
+.chat-body {
   background-image: url("../images/chat_back.png");
-  min-height: 80vh;
+  min-height: 100vh;
+  padding-top: 100px;
 }
 
 .chat .chat_messages {
@@ -32,37 +44,59 @@
   left: 0;
   right: 0;
   /* fixed된 상태에서 위와 같이 가운데 정렬 */
-  bottom: 30px;
-  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: #fcfcfc;
-  padding: 0px 20px;
-  border-radius: 40px;
   /* 아래는 도형에 그림자 넣는 방법. 맨 마지막은 opacity 값 */
   box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.chat_write:focus {
+  /* send message 부분 아웃라인 없애주기 */
+  outline: none;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.chat_write-container,
+.chat_write {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  border-radius: 30px;
+  padding: 20px 60px;
+  border: none;
+  font-size: 14px;
+  transition: all 0.4s ease-in-out;
+}
+
+.chat_icon {
+  font-size: 18px;
+  transition: opacity 0.3s ease-in-out;
+  /* 0.5초에 걸쳐서 opacity 효과가 나타남 */
+}
+
+.chat_write:focus ~ .chat_icon {
+  opacity: 0.2;
+  border-radius: 30px;
 }
 
 .chat_write i {
   font-size: 22px;
 }
 
-.chat_write-column:nth-child(2) {
-  width: 80%;
+.chat_icon-left {
+  position: absolute;
+  margin-left: -60px;
+  margin-top: -18px;
 }
 
-.chat_write-column input {
-  padding: 20px 10px;
-  width: 100%;
-  /* 원 도형 아웃라인 제거 */
-  border: none;
-}
-
-.chat_write-column:focus {
-  /* send message 부분 아웃라인 없애주기 */
-  outline: none;
+.chat_icon-right {
+  position: absolute;
+  right: 50px;
+  margin-top: -18px;
 }
 
 .chats_list .friends_title {
@@ -111,7 +145,7 @@
 
 .message .message_bubbles {
   border-bottom-left-radius: 0px;
-  background-image: repeating-linear-gradient(to right, #6afaff, #fbd786, pink);
+  background-image: repeating-linear-gradient(to right, pink, #f2fcfe);
   font-weight: 500;
   color: white;
   text-shadow: 0.5px 0.5px gray, -0.5px -0.5px gray, -0.5px 0.5px gray,
@@ -120,7 +154,7 @@
 
 .sent-message .message_bubbles {
   border-bottom-right-radius: 0px;
-  background-image: repeating-linear-gradient(to left, #6afaff, #fbd786, pink);
+  background-image: repeating-linear-gradient(to left, #f2fcfe, #1c92d2);
   font-weight: 500;
   color: white;
   text-shadow: 0.5px 0.5px gray, -0.5px -0.5px gray, -0.5px 0.5px gray,
